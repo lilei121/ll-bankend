@@ -3,7 +3,6 @@ package com.ll.llbankend.controller.uesr;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ll.llbankend.constant.BaseResponse;
 import com.ll.llbankend.constant.ErrorCode;
-import com.ll.llbankend.exception.BaseException;
 import com.ll.llbankend.model.request.UserLoginRequest;
 import com.ll.llbankend.model.request.UserRegisterRequest;
 import com.ll.llbankend.model.user.User;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.ll.llbankend.constant.UserConstant.LOGIN_USER_STATUS;
