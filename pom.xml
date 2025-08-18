@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ll</groupId>
-    <artifactId>ll-bankend</artifactId>
+    <artifactId>friend-frontend-banked</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ll-banked</name>
+    <name>friend-frontend-banked</name>
     <description>用户中心</description>
     <properties>
         <java.version>1.8</java.version>
@@ -97,7 +97,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.ll.llbankend.LlBankendApplication</mainClass>
+                    <mainClass>com.ll.friendFrontendBanked.LlBankendApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

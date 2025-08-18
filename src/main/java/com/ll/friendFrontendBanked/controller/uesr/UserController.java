@@ -1,13 +1,14 @@
-package com.ll.llbankend.controller.uesr;
+package com.ll.friendFrontendBanked.controller.uesr;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.ll.llbankend.constant.BaseResponse;
-import com.ll.llbankend.constant.ErrorCode;
-import com.ll.llbankend.model.request.UserLoginRequest;
-import com.ll.llbankend.model.request.UserRegisterRequest;
-import com.ll.llbankend.model.user.User;
-import com.ll.llbankend.service.UserService;
-import com.ll.llbankend.utils.ResultUtils;
+import com.ll.friendFrontendBanked.constant.BaseResponse;
+import com.ll.friendFrontendBanked.constant.ErrorCode;
+import com.ll.friendFrontendBanked.model.request.UserLoginRequest;
+import com.ll.friendFrontendBanked.model.request.UserRegisterRequest;
+import com.ll.friendFrontendBanked.model.user.User;
+import com.ll.friendFrontendBanked.service.UserService;
+import com.ll.friendFrontendBanked.utils.ResultUtils;
+
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.web.bind.annotation.*;
@@ -16,8 +17,8 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-import static com.ll.llbankend.constant.UserConstant.LOGIN_USER_STATUS;
-import static com.ll.llbankend.constant.UserConstant.USER_ROLE_ADMIN;
+import static com.ll.friendFrontendBanked.constant.UserConstant.LOGIN_USER_STATUS;
+import static com.ll.friendFrontendBanked.constant.UserConstant.USER_ROLE_ADMIN;
 
 @RestController
 @RequestMapping("/user")
@@ -63,7 +64,7 @@ public class UserController {
 
     @GetMapping("/get")
     public BaseResponse<List<User>> getUserList(String username, HttpServletRequest request) {
-        if (isAdmin(request)) {
+        if (!isAdmin(request)) {
             return ResultUtils.error(ErrorCode.NO_AUTH);
         }
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
@@ -86,7 +87,7 @@ public class UserController {
 
     @GetMapping("/delete")
     public BaseResponse<Boolean> deleteUser(long id, HttpServletRequest request) {
-        if (isAdmin(request)) {
+        if (!isAdmin(request)) {
             return ResultUtils.error(ErrorCode.NO_AUTH);
         }
         if (id <= 0) {
@@ -98,6 +99,6 @@ public class UserController {
 
     private boolean isAdmin(@NotNull HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute(LOGIN_USER_STATUS);
-        return user == null || user.getUserRole() != USER_ROLE_ADMIN;
+        return user != null || user.getUserRole() == USER_ROLE_ADMIN;
     }
 }

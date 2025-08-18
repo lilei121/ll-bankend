@@ -1,4 +1,4 @@
-package com.ll.llbankend.constant;
+package com.ll.friendFrontendBanked.constant;
 
 import lombok.Getter;
 

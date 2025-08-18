@@ -1,6 +1,6 @@
-package com.ll.llbankend.service;
+package com.ll.friendFrontendBanked.service;
 
-import com.ll.llbankend.model.user.User;
+import com.ll.friendFrontendBanked.model.user.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,8 +1,8 @@
-package com.ll.llbankend.exception;
+package com.ll.friendFrontendBanked.exception;
 
-import com.ll.llbankend.constant.BaseResponse;
-import com.ll.llbankend.constant.ErrorCode;
-import com.ll.llbankend.utils.ResultUtils;
+import com.ll.friendFrontendBanked.constant.BaseResponse;
+import com.ll.friendFrontendBanked.constant.ErrorCode;
+import com.ll.friendFrontendBanked.utils.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

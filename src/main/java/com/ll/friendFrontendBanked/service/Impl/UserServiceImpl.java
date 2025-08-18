@@ -1,12 +1,12 @@
-package com.ll.llbankend.service.Impl;
+package com.ll.friendFrontendBanked.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.ll.llbankend.constant.ErrorCode;
-import com.ll.llbankend.exception.BaseException;
-import com.ll.llbankend.model.user.User;
-import com.ll.llbankend.service.UserService;
-import com.ll.llbankend.mapper.UserMapper;
+import com.ll.friendFrontendBanked.constant.ErrorCode;
+import com.ll.friendFrontendBanked.exception.BaseException;
+import com.ll.friendFrontendBanked.model.user.User;
+import com.ll.friendFrontendBanked.service.UserService;
+import com.ll.friendFrontendBanked.mapper.UserMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 import java.util.regex.Pattern;
 
-import static com.ll.llbankend.constant.UserConstant.LOGIN_USER_STATUS;
+import static com.ll.friendFrontendBanked.constant.UserConstant.LOGIN_USER_STATUS;
 
 /**
  * 针对表【user(用户数据表)】的数据库操作Service实现

@@ -1,4 +1,4 @@
-package com.ll.llbankend.model.user;
+package com.ll.friendFrontendBanked.model.user;
 
 import com.baomidou.mybatisplus.annotation.*;
 

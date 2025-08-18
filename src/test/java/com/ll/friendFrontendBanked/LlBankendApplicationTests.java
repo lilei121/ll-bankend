@@ -1,4 +1,4 @@
-package com.ll.llbankend;
+package com.ll.friendFrontendBanked;
 
 
 import org.junit.jupiter.api.Test;

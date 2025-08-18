@@ -1,7 +1,7 @@
-package com.ll.llbankend.utils;
+package com.ll.friendFrontendBanked.utils;
 
-import com.ll.llbankend.constant.BaseResponse;
-import com.ll.llbankend.constant.ErrorCode;
+import com.ll.friendFrontendBanked.constant.BaseResponse;
+import com.ll.friendFrontendBanked.constant.ErrorCode;
 
 /**
  *

@@ -1,6 +1,6 @@
-package com.ll.llbankend.mapper;
+package com.ll.friendFrontendBanked.mapper;
 
-import com.ll.llbankend.model.user.User;
+import com.ll.friendFrontendBanked.model.user.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

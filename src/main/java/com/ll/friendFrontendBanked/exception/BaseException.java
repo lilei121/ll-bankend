@@ -1,6 +1,6 @@
-package com.ll.llbankend.exception;
+package com.ll.friendFrontendBanked.exception;
 
-import com.ll.llbankend.constant.ErrorCode;
+import com.ll.friendFrontendBanked.constant.ErrorCode;
 import lombok.Getter;
 
 

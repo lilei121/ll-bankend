@@ -1,8 +1,8 @@
-package com.ll.llbankend.service;
+package com.ll.friendFrontendBanked.service;
 
 import java.util.Date;
 
-import com.ll.llbankend.model.user.User;
+import com.ll.friendFrontendBanked.model.user.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

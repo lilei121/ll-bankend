@@ -1,4 +1,4 @@
-package com.ll.llbankend.model.request;
+package com.ll.friendFrontendBanked.model.request;
 
 import lombok.Data;
 
